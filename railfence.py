@@ -14,7 +14,7 @@ for i in pt:
         r-=1
         if r<=0:
             temp = 1
-for i in range(0,key):
-    for j in range(0,len(pt)):
-        if res[i][j]!='0':
-            print(res[i][j],end="")
+for i in res:
+  for j in i:
+    if not j=='0':
+      print(j,end="")
