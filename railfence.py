@@ -15,10 +15,10 @@ for i in pt:
         if r <= 0:
             temp = 1
 cipher = ""
-for i in res:
-    for j in i:
-        if not j == '0':
-            cipher += j
+for i in range(0, key):
+    for j in range(0, len(pt)):
+        if res[i][j] != '0':
+            cipher+=res[i][j]
 print(cipher)
 
 res = [['0' for j in range(0, len(cipher))] for j in range(0, key)]
